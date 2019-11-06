@@ -1,6 +1,14 @@
+import java.awt.EventQueue;
+
 public class SecurePasswordGenerator {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new MyFrame();
+
+            }
+        });
     }
 }
