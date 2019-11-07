@@ -53,4 +53,10 @@ public class MyForm {
     private JLabel genInfoLabel;
     private JTextPane generatedPassTextPane;
     private JButton copyButton;
+    private JLabel creatorInfoJLabel;
+    private JTextField textField1;
+    private JTextField textField2;
+    private JTextField textField3;
+    private JTextField textField4;
+    private JTextField textField5;
 }

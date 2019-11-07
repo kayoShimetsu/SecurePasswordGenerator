@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MyForm">
   <grid id="27dc6" binding="jPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="20" y="20" width="917" height="400"/>
+      <xy x="20" y="20" width="917" height="406"/>
     </constraints>
     <properties>
       <enabled value="true"/>
@@ -131,6 +131,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="a-z"/>
                     </properties>
                   </component>
@@ -140,6 +141,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="ą-ż"/>
                     </properties>
                   </component>
@@ -149,6 +151,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="0-9"/>
                     </properties>
                   </component>
@@ -158,6 +161,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="A-Z"/>
                     </properties>
                   </component>
@@ -191,6 +195,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="#"/>
                     </properties>
                   </component>
@@ -200,6 +205,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="$"/>
                     </properties>
                   </component>
@@ -209,6 +215,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="%"/>
                     </properties>
                   </component>
@@ -218,6 +225,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="^"/>
                     </properties>
                   </component>
@@ -227,6 +235,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="wszystkie"/>
                     </properties>
                   </component>
@@ -236,6 +245,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="@"/>
                     </properties>
                   </component>
@@ -245,6 +255,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="!"/>
                     </properties>
                   </component>
@@ -254,6 +265,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="*"/>
                     </properties>
                   </component>
@@ -263,7 +275,8 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
-                      <text value="&amp;"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value=""/>
                     </properties>
                   </component>
                   <component id="b5225" class="javax.swing.JCheckBox" binding="bPolishCharsCheckBox">
@@ -272,6 +285,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="Ą-Ż"/>
                     </properties>
                   </component>
@@ -305,6 +319,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="("/>
                     </properties>
                   </component>
@@ -314,6 +329,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value=")"/>
                     </properties>
                   </component>
@@ -323,6 +339,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="["/>
                     </properties>
                   </component>
@@ -332,6 +349,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="]"/>
                     </properties>
                   </component>
@@ -341,6 +359,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="{"/>
                     </properties>
                   </component>
@@ -350,6 +369,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="}"/>
                     </properties>
                   </component>
@@ -359,6 +379,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="&lt;"/>
                     </properties>
                   </component>
@@ -368,6 +389,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="&gt;"/>
                     </properties>
                   </component>
@@ -377,6 +399,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value=";"/>
                     </properties>
                   </component>
@@ -386,6 +409,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="~"/>
                     </properties>
                   </component>
@@ -395,6 +419,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value=":"/>
                     </properties>
                   </component>
@@ -404,6 +429,8 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
+                      <selected value="false"/>
                       <text value="-"/>
                     </properties>
                   </component>
@@ -413,6 +440,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="'"/>
                     </properties>
                   </component>
@@ -422,6 +450,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="_"/>
                     </properties>
                   </component>
@@ -431,6 +460,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="&quot;"/>
                     </properties>
                   </component>
@@ -440,6 +470,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="="/>
                     </properties>
                   </component>
@@ -449,6 +480,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value=","/>
                     </properties>
                   </component>
@@ -458,6 +490,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="+"/>
                     </properties>
                   </component>
@@ -467,6 +500,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="."/>
                     </properties>
                   </component>
@@ -476,6 +510,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="\"/>
                     </properties>
                   </component>
@@ -485,6 +520,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="/"/>
                     </properties>
                   </component>
@@ -494,6 +530,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="`"/>
                     </properties>
                   </component>
@@ -503,6 +540,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="?"/>
                     </properties>
                   </component>
@@ -512,6 +550,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="|"/>
                     </properties>
                   </component>
@@ -521,6 +560,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="wszystkie"/>
                     </properties>
                   </component>
@@ -530,6 +570,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="wszystkie"/>
                     </properties>
                   </component>
@@ -539,6 +580,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <requestFocusEnabled value="false"/>
                       <text value="wszystkie"/>
                     </properties>
                   </component>
@@ -555,6 +597,7 @@
                       <gridbag weightx="1.0" weighty="1.0" ipadx="90"/>
                     </constraints>
                     <properties>
+                      <focusPainted value="false"/>
                       <hideActionText value="true"/>
                       <text value="GENERUJ"/>
                     </properties>
@@ -591,6 +634,7 @@
                       <gridbag weightx="0.0" weighty="0.0" ipadx="25"/>
                     </constraints>
                     <properties>
+                      <focusPainted value="false"/>
                       <text value="kopiuj"/>
                     </properties>
                   </component>
@@ -649,14 +693,239 @@
               </grid>
             </children>
           </grid>
-          <grid id="6d331" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="0"/>
+          <grid id="6d331" layout-manager="GridBagLayout">
             <constraints>
               <tabbedpane title="Kreator"/>
             </constraints>
-            <properties/>
+            <properties>
+              <opaque value="true"/>
+              <preferredSize width="300" height="206"/>
+            </properties>
             <border type="none"/>
-            <children/>
+            <children>
+              <component id="dc5ac" class="javax.swing.JLabel" binding="creatorInfoJLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Wpisz składowe hasła"/>
+                </properties>
+              </component>
+              <component id="5ec73" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="0"/>
+                  <horizontalAlignment value="0"/>
+                  <maximumSize width="250" height="24"/>
+                  <minimumSize width="250" height="24"/>
+                  <preferredSize width="250" height="24"/>
+                </properties>
+              </component>
+              <component id="4e7c4" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="0"/>
+                  <horizontalAlignment value="0"/>
+                  <maximumSize width="250" height="24"/>
+                  <minimumSize width="250" height="24"/>
+                  <preferredSize width="250" height="24"/>
+                </properties>
+              </component>
+              <component id="63523" class="javax.swing.JTextField" binding="textField3" default-binding="true">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="0"/>
+                  <horizontalAlignment value="0"/>
+                  <inheritsPopupMenu value="false"/>
+                  <maximumSize width="250" height="24"/>
+                  <minimumSize width="250" height="24"/>
+                  <preferredSize width="250" height="24"/>
+                </properties>
+              </component>
+              <component id="98ddc" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="0"/>
+                  <horizontalAlignment value="0"/>
+                  <maximumSize width="250" height="24"/>
+                  <minimumSize width="250" height="24"/>
+                  <preferredSize width="250" height="24"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="46534" class="javax.swing.JTextField" binding="textField5" default-binding="true">
+                <constraints>
+                  <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="0"/>
+                  <dragEnabled value="false"/>
+                  <horizontalAlignment value="0"/>
+                  <maximumSize width="250" height="24"/>
+                  <minimumSize width="250" height="24"/>
+                  <opaque value="true"/>
+                  <preferredSize width="250" height="24"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <hspacer id="fc6c7">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="c90c3">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="6c99f">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="ade19">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="c4d9e">
+                <constraints>
+                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="54c84">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <hspacer id="5407b">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <grid id="6ed73" layout-manager="GridBagLayout">
+                <constraints>
+                  <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="67cd0" class="javax.swing.JButton">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="1.0" ipadx="90"/>
+                    </constraints>
+                    <properties>
+                      <focusPainted value="false"/>
+                      <hideActionText value="true"/>
+                      <text value="GENERUJ"/>
+                    </properties>
+                  </component>
+                  <vspacer id="bb9f0">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                  </vspacer>
+                  <component id="dd2f3" class="javax.swing.JButton">
+                    <constraints>
+                      <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0" ipadx="25"/>
+                    </constraints>
+                    <properties>
+                      <focusPainted value="false"/>
+                      <text value="kopiuj"/>
+                    </properties>
+                  </component>
+                  <hspacer id="56af8">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="9f0e5">
+                    <constraints>
+                      <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="584f4" class="javax.swing.JTextPane">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                      <gridbag weightx="1.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <editable value="false"/>
+                      <maximumSize width="400" height="22"/>
+                      <minimumSize width="300" height="22"/>
+                      <preferredSize width="300" height="22"/>
+                      <text value="miejsce na wygenerowane hasło"/>
+                    </properties>
+                  </component>
+                  <hspacer id="125b6">
+                    <constraints>
+                      <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                  </hspacer>
+                  <vspacer id="8db26">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                  </vspacer>
+                  <component id="eb75a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <text value="Siła hasła: silne"/>
+                    </properties>
+                  </component>
+                  <vspacer id="3dc5e">
+                    <constraints>
+                      <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                  </vspacer>
+                </children>
+              </grid>
+            </children>
           </grid>
           <grid id="c5092" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
