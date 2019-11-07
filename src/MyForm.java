@@ -31,7 +31,7 @@ public class MyForm {
     private JCheckBox checkBoxL3C2;
     private JCheckBox checkBoxL4C2;
     private JCheckBox checkBoxL3C3;
-    private JCheckBox _checkBoxL4C3;
+    private JCheckBox checkBoxL4C3;
     private JCheckBox checkBoxL3C4;
     private JCheckBox checkBoxL4C4;
     private JCheckBox checkBoxL3C5;
@@ -59,4 +59,7 @@ public class MyForm {
     private JTextField textField3;
     private JTextField textField4;
     private JTextField textField5;
+    private JLabel oldPassSthenghtLabel;
+    private JButton enhancePassButton;
+    private JTextPane enhancedPassJTextPane;
 }
