@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MyForm">
   <grid id="27dc6" binding="jPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="20" y="20" width="917" height="406"/>
+      <xy x="20" y="20" width="917" height="662"/>
     </constraints>
     <properties>
       <enabled value="true"/>
@@ -26,7 +26,7 @@
                 <properties/>
                 <border type="none"/>
                 <children>
-                  <component id="9e3eb" class="javax.swing.JSlider" binding="slider1" default-binding="true">
+                  <component id="9e3eb" class="javax.swing.JSlider" binding="passLengthSlider">
                     <constraints>
                       <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="1.0" weighty="1.0"/>
@@ -105,10 +105,11 @@
                   </hspacer>
                   <component id="411b1" class="javax.swing.JLabel" binding="sliderValueLabel">
                     <constraints>
-                      <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
+                      <preferredSize width="16" height="16"/>
                       <text value="8"/>
                     </properties>
                   </component>
@@ -229,16 +230,6 @@
                       <text value="^"/>
                     </properties>
                   </component>
-                  <component id="91f9e" class="javax.swing.JCheckBox" binding="allL1CheckBox">
-                    <constraints>
-                      <grid row="1" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="0.0" weighty="0.0"/>
-                    </constraints>
-                    <properties>
-                      <requestFocusEnabled value="false"/>
-                      <text value="wszystkie"/>
-                    </properties>
-                  </component>
                   <component id="ada00" class="javax.swing.JCheckBox" binding="checkBoxL1C2">
                     <constraints>
                       <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -276,7 +267,7 @@
                     </constraints>
                     <properties>
                       <requestFocusEnabled value="false"/>
-                      <text value=""/>
+                      <text value="&amp;"/>
                     </properties>
                   </component>
                   <component id="b5225" class="javax.swing.JCheckBox" binding="bPolishCharsCheckBox">
@@ -554,41 +545,80 @@
                       <text value="|"/>
                     </properties>
                   </component>
-                  <component id="e7214" class="javax.swing.JCheckBox" binding="allL2checkBox">
+                  <component id="bfa5e" class="javax.swing.JButton" binding="allL1Button">
                     <constraints>
-                      <grid row="2" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="1" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
-                      <requestFocusEnabled value="false"/>
+                      <focusPainted value="false"/>
+                      <focusable value="true"/>
+                      <margin top="2" left="2" bottom="2" right="2"/>
+                      <maximumSize width="76" height="23"/>
+                      <minimumSize width="76" height="23"/>
+                      <preferredSize width="76" height="23"/>
                       <text value="wszystkie"/>
+                      <visible value="true"/>
                     </properties>
                   </component>
-                  <component id="db7c0" class="javax.swing.JCheckBox" binding="allL3CheckBox">
+                  <component id="e8579" class="javax.swing.JButton" binding="allL2Button">
                     <constraints>
-                      <grid row="3" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="2" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
-                      <requestFocusEnabled value="false"/>
+                      <focusPainted value="false"/>
+                      <focusable value="true"/>
+                      <margin top="2" left="2" bottom="2" right="2"/>
+                      <maximumSize width="76" height="23"/>
+                      <minimumSize width="76" height="23"/>
+                      <preferredSize width="76" height="23"/>
                       <text value="wszystkie"/>
+                      <visible value="true"/>
                     </properties>
                   </component>
-                  <component id="c5b0d" class="javax.swing.JCheckBox" binding="allL4CheckBox">
+                  <component id="62b44" class="javax.swing.JButton" binding="allL3Button">
                     <constraints>
-                      <grid row="4" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="3" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
-                      <requestFocusEnabled value="false"/>
+                      <focusPainted value="false"/>
+                      <focusable value="true"/>
+                      <margin top="2" left="2" bottom="2" right="2"/>
+                      <maximumSize width="76" height="23"/>
+                      <minimumSize width="76" height="23"/>
+                      <preferredSize width="76" height="23"/>
                       <text value="wszystkie"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="1cf03" class="javax.swing.JButton" binding="allL4Button">
+                    <constraints>
+                      <grid row="4" column="16" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <focusPainted value="false"/>
+                      <focusable value="true"/>
+                      <margin top="2" left="2" bottom="2" right="2"/>
+                      <maximumSize width="76" height="23"/>
+                      <minimumSize width="76" height="23"/>
+                      <preferredSize width="76" height="23"/>
+                      <text value="wszystkie"/>
+                      <visible value="true"/>
                     </properties>
                   </component>
                 </children>
               </grid>
               <grid id="8ccc8" layout-manager="GridBagLayout">
                 <constraints border-constraint="South"/>
-                <properties/>
+                <properties>
+                  <enabled value="true"/>
+                  <maximumSize width="456" height="142"/>
+                  <minimumSize width="456" height="142"/>
+                  <preferredSize width="456" height="142"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <component id="e6a94" class="javax.swing.JButton" binding="generateButton">
@@ -616,6 +646,7 @@
                     <properties>
                       <enabled value="false"/>
                       <text value="UWAGA! By wspomóc generowanie hasła, poruszaj kursorem w oknie generatora."/>
+                      <visible value="false"/>
                     </properties>
                     <clientProperties>
                       <html.disable class="java.lang.Boolean" value="false"/>
@@ -626,16 +657,20 @@
                       <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <visible value="false"/>
+                    </properties>
                   </component>
-                  <component id="952a4" class="javax.swing.JButton" binding="copyButton">
+                  <component id="952a4" class="javax.swing.JButton" binding="copyGeneratedPassButton">
                     <constraints>
-                      <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0" ipadx="25"/>
                     </constraints>
                     <properties>
+                      <enabled value="false"/>
                       <focusPainted value="false"/>
                       <text value="kopiuj"/>
+                      <visible value="true"/>
                     </properties>
                   </component>
                   <hspacer id="8e37e">
@@ -659,7 +694,8 @@
                     </constraints>
                     <properties>
                       <editable value="false"/>
-                      <text value="miejsce na wygenerowane hasło"/>
+                      <text value="naciśnij generuj aby wygenerować hasło"/>
+                      <visible value="true"/>
                     </properties>
                   </component>
                   <hspacer id="dc0e3">
@@ -674,21 +710,22 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                   </vspacer>
-                  <component id="f7ef1" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="0.0" weighty="0.0"/>
-                    </constraints>
-                    <properties>
-                      <text value="Siła hasła: silne"/>
-                    </properties>
-                  </component>
                   <vspacer id="595c2">
                     <constraints>
                       <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                   </vspacer>
+                  <component id="f7ef1" class="javax.swing.JLabel" binding="generatedPassStrengthLabel">
+                    <constraints>
+                      <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <text value="Siła hasła: "/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
                 </children>
               </grid>
             </children>
@@ -842,7 +879,7 @@
                 <properties/>
                 <border type="none"/>
                 <children>
-                  <component id="67cd0" class="javax.swing.JButton">
+                  <component id="67cd0" class="javax.swing.JButton" binding="createButton">
                     <constraints>
                       <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="1.0" weighty="1.0" ipadx="90"/>
@@ -850,7 +887,7 @@
                     <properties>
                       <focusPainted value="false"/>
                       <hideActionText value="true"/>
-                      <text value="GENERUJ"/>
+                      <text value="KREUJ"/>
                     </properties>
                   </component>
                   <vspacer id="bb9f0">
@@ -859,12 +896,13 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                   </vspacer>
-                  <component id="dd2f3" class="javax.swing.JButton">
+                  <component id="dd2f3" class="javax.swing.JButton" binding="copyCreatedPassButton">
                     <constraints>
                       <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0" ipadx="25"/>
                     </constraints>
                     <properties>
+                      <enabled value="false"/>
                       <focusPainted value="false"/>
                       <text value="kopiuj"/>
                     </properties>
@@ -881,7 +919,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                   </hspacer>
-                  <component id="584f4" class="javax.swing.JTextPane">
+                  <component id="584f4" class="javax.swing.JTextPane" binding="createdPassTextPane">
                     <constraints>
                       <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="50"/>
@@ -893,7 +931,7 @@
                       <maximumSize width="400" height="22"/>
                       <minimumSize width="300" height="22"/>
                       <preferredSize width="300" height="22"/>
-                      <text value="miejsce na wygenerowane hasło"/>
+                      <text value="miejsce na wykreowane hasło"/>
                     </properties>
                   </component>
                   <hspacer id="125b6">
@@ -908,13 +946,13 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                   </vspacer>
-                  <component id="eb75a" class="javax.swing.JLabel">
+                  <component id="eb75a" class="javax.swing.JLabel" binding="createdPassStrengthLabel">
                     <constraints>
                       <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
-                      <text value="Siła hasła: silne"/>
+                      <text value="Siła hasła: "/>
                     </properties>
                   </component>
                   <vspacer id="3dc5e">
@@ -949,7 +987,7 @@
               <vspacer id="17e25">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                  <gridbag weightx="0.0" weighty="0.0"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipady="30"/>
                 </constraints>
               </vspacer>
               <component id="e50c0" class="javax.swing.JLabel">
@@ -988,7 +1026,7 @@
                   <gridbag weightx="0.0" weighty="0.0"/>
                 </constraints>
                 <properties>
-                  <text value="Siła hasła: niskie"/>
+                  <text value="Siła hasła: "/>
                 </properties>
               </component>
               <grid id="5a77c" layout-manager="GridBagLayout">
@@ -1012,16 +1050,17 @@
                   </component>
                   <vspacer id="96466">
                     <constraints>
-                      <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                      <gridbag weightx="0.0" weighty="0.0"/>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0" ipady="35"/>
                     </constraints>
                   </vspacer>
-                  <component id="32d8a" class="javax.swing.JButton">
+                  <component id="32d8a" class="javax.swing.JButton" binding="copyEnhancedPassButton">
                     <constraints>
                       <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0" ipadx="25"/>
                     </constraints>
                     <properties>
+                      <enabled value="false"/>
                       <focusPainted value="false"/>
                       <text value="kopiuj"/>
                     </properties>
@@ -1038,7 +1077,7 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                   </hspacer>
-                  <component id="b7eec" class="javax.swing.JTextPane" binding="enhancedPassJTextPane">
+                  <component id="b7eec" class="javax.swing.JTextPane" binding="enhancedPassTextPane">
                     <constraints>
                       <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="50"/>
@@ -1065,13 +1104,13 @@
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                   </vspacer>
-                  <component id="16c32" class="javax.swing.JLabel">
+                  <component id="16c32" class="javax.swing.JLabel" binding="enhancedPassStrengthLabel">
                     <constraints>
                       <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                       <gridbag weightx="0.0" weighty="0.0"/>
                     </constraints>
                     <properties>
-                      <text value="Siła hasła: silne"/>
+                      <text value="Siła hasła: "/>
                     </properties>
                   </component>
                   <vspacer id="7cf56">
@@ -1084,14 +1123,58 @@
               </grid>
             </children>
           </grid>
-          <grid id="8f349" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="8f349" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <tabbedpane title="Info"/>
             </constraints>
             <properties/>
             <border type="none"/>
-            <children/>
+            <children>
+              <component id="f12a4" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <scrollpane id="6c816">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <horizontalScrollBarPolicy value="30"/>
+                  <verticalScrollBarPolicy value="20"/>
+                </properties>
+                <border type="none" title="Jak korzystać? "/>
+                <children>
+                  <component id="8de1b" class="javax.swing.JTextPane" binding="ogólnieWyjaśnieniePoCoTextPane" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <text value="Ogólnie wyjaśnienie po co i do czego, jak korzystać z każdego komponentu, oraz tip'y jak posługiwać się hasłami."/>
+                    </properties>
+                    <clientProperties>
+                      <JEditorPane.w3cLengthUnits class="java.lang.Boolean" value="false"/>
+                    </clientProperties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="effe7">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none" title="Informacje o aplikacji"/>
+                <children>
+                  <component id="1bbc3" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <text value="Secure Password Generator v 1.0"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
           </grid>
         </children>
       </tabbedpane>

@@ -4,8 +4,9 @@ import java.awt.*;
 public class MyFrame extends JFrame {
     MyFrame() {
         super("Generator Bezpiecznych Haseł"); //Secure Password Generator
-        //setJMenuBar(new JMenuBar());
-        setSize(700, 500);
+        setSize(550, 390);
+        setMinimumSize(new Dimension(550, 390));
+        setPreferredSize(new Dimension(550, 390));
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
         setResizable(true);
