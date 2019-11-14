@@ -1,5 +1,11 @@
 public class PassStrenghtAnalyzer {
-    //TODO add attributes & params
+    String pass;
+
+    PassStrenghtAnalyzer(String paswd)
+    {
+        this.pass = paswd;
+    }
+
     String passStrength()
     {
         //TODO add strength analysis
