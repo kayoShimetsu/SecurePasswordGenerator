@@ -25,13 +25,16 @@ public class Creator {
 
         while(places.length() < words.size() + 1) places = '0' + places;
 
-        //pass += (random.nextInt(10) + 48);
         for(int i = 0; i < words.size(); i++) {
             if(places.charAt(i) == '1') pass += random.nextInt(10);
             pass += new Enhancer(words.get(i)).enhancePass();
         }
 
         if(places.charAt(words.size()) == '1') pass += random.nextInt(10);
+
+        while(pass.length() < 8) {
+            pass += (char)(random.nextInt(93) + 33);
+        }
 
         return pass;
     }

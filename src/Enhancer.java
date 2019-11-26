@@ -15,10 +15,17 @@ public class Enhancer {
         Random random = new Random();
 
         for(int i = 0; i < pass.length(); i++) {
-            Boolean c = random.nextBoolean();
-
-            if(c && lib.containsKey(enPass.charAt(i))) {
+            if(random.nextBoolean() && lib.containsKey(enPass.charAt(i))) {
                 enPass.setCharAt(i, lib.get(enPass.charAt(i)));
+            }
+            else {
+                if (random.nextBoolean() && Character.isLowerCase(enPass.charAt(i))) {
+                    enPass.setCharAt(i, Character.toUpperCase(enPass.charAt(i)));
+                }
+
+                if (random.nextBoolean() && Character.isUpperCase(enPass.charAt(i))) {
+                    enPass.setCharAt(i, Character.toLowerCase(enPass.charAt(i)));
+                }
             }
         }
 
@@ -41,6 +48,7 @@ public class Enhancer {
         lib.put('s', '$');
         lib.put('x', '+');
         lib.put('z', '=');
+        lib.put(' ', '_');
 
         return lib;
     }
