@@ -1,6 +1,12 @@
 import javax.swing.*;
 import java.awt.*;
 
+
+/**
+ * Class that creates a frame
+ * @author IwonaD
+ */
+
 public class MyFrame extends JFrame {
     MyFrame() {
         super("Generator Bezpiecznych Haseł"); //Secure Password Generator
@@ -19,7 +25,10 @@ public class MyFrame extends JFrame {
         pack();
     }
 
-    public void initComponents(){
+    /**
+     * Initializes components from form
+     */
+    public void initComponents() {
         MyForm myForm = new MyForm();
         setContentPane(myForm.jPanel);
     }

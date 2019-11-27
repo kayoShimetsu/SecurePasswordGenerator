@@ -1,23 +1,38 @@
-public class PassStrenghtAnalyzer {
+/**
+ * Class analyzing password strength
+ * @author IwonaD
+ */
+
+public class PassStrengthAnalyzer {
     String pass;
 
-    PassStrenghtAnalyzer(String paswd) {
-        this.pass = paswd;
+    /**
+     * @param passwd password to analyze
+     */
+    PassStrengthAnalyzer(String passwd) {
+        this.pass = passwd;
     }
 
+    /**
+     * Analyzes strength based on Shannon entrophy
+     * @return Three possible strings "Siła hasła: słabe/średnie/silne"
+     */
     String passStrength() {
         double passEntrophy;
 
-        passEntrophy = pass.length() * (Math.log(passAlpabetLenghth()) / Math.log(2));
+        passEntrophy = pass.length() * (Math.log(passAlphabetLenghth()) / Math.log(2));
 
         if(passEntrophy < 50) return "Siła hasła: słabe";
         else if(passEntrophy > 50
                 && passEntrophy < 60) return "Siła hasła: średnie";
-        else if(passEntrophy > 60) return "Siła hasła: silne";
-        else return "Siła hasła: ";
+        else return "Siła hasła: silne";
     }
 
-    private int passAlpabetLenghth() {
+    /**
+     * Checks alphabet (not the number od unique chars contained in password) from which password was created
+     * @return alphabet length
+     */
+    private int passAlphabetLenghth() {
         int len = 0;
 
         boolean isDigit = false; //0-9
@@ -71,6 +86,11 @@ public class PassStrenghtAnalyzer {
         return len;
     }
 
+    /**
+     * Checks if char is lower case polish letter
+     * @param ch
+     * @return
+     */
     private boolean isLowerCasePolishLetter(Character ch) {
         if(ch == 'ą'
                 || ch == 'ć'
@@ -85,15 +105,11 @@ public class PassStrenghtAnalyzer {
         else return false;
     }
 
-    private boolean isSpecialCharacter(Character ch) {
-        if((ch >= '!' && ch <= '/')
-                || (ch >= ':' && ch <= '@')
-                || (ch >= '[' && ch <= '`')
-                || (ch >= '{' && ch <= '~'))
-            return true;
-        else return false;
-    }
-
+    /**
+     * Checks if a char is upper case polish letter
+     * @param ch
+     * @return
+     */
     private boolean isUpperCasePolishLetter(Character ch) {
         if(ch == 'Ą'
                 || ch == 'Ć'
@@ -104,6 +120,20 @@ public class PassStrenghtAnalyzer {
                 || ch == 'Ś'
                 || ch == 'Ź'
                 || ch == 'Ż')
+            return true;
+        else return false;
+    }
+
+    /**
+     * Checks if char is a special character
+     * @param ch
+     * @return
+     */
+    private boolean isSpecialCharacter(Character ch) {
+        if((ch >= '!' && ch <= '/')
+                || (ch >= ':' && ch <= '@')
+                || (ch >= '[' && ch <= '`')
+                || (ch >= '{' && ch <= '~'))
             return true;
         else return false;
     }

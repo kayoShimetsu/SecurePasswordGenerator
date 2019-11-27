@@ -1,4 +1,11 @@
-import java.awt.EventQueue;
+import java.awt.*;
+
+
+/**
+ * Main class to run application.
+ *
+ * @author IwonaD
+ */
 
 public class SecurePasswordGenerator {
 
@@ -7,7 +14,6 @@ public class SecurePasswordGenerator {
             @Override
             public void run() {
                 new MyFrame();
-
             }
         });
     }

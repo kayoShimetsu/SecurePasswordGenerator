@@ -7,6 +7,12 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
+/**
+ * Class defining application form
+ * @author IwonaD
+ */
+
 public class MyForm {
     public JPanel jPanel;
     private JTabbedPane tabbedPane1;
@@ -80,8 +86,6 @@ public class MyForm {
 
 
     public MyForm() {
-        //TODO set panel components visibility
-
         //----------GENERATOR----------//
 
         //shows slider value
@@ -244,7 +248,7 @@ public class MyForm {
 
                     generatedPassTextPane.setText(generator.generatePass());
                     copyGeneratedPassButton.setEnabled(true);
-                    generatedPassStrengthLabel.setText(new PassStrenghtAnalyzer(generatedPassTextPane.getText()).passStrength());
+                    generatedPassStrengthLabel.setText(new PassStrengthAnalyzer(generatedPassTextPane.getText()).passStrength());
                 }
                 catch(Exception ex)
                 {
@@ -286,7 +290,7 @@ public class MyForm {
                             textField4.getText(),
                             textField5.getText())
                             .createPass());
-                    createdPassStrengthLabel.setText(new PassStrenghtAnalyzer(createdPassTextPane.getText()).passStrength());
+                    createdPassStrengthLabel.setText(new PassStrengthAnalyzer(createdPassTextPane.getText()).passStrength());
                     copyCreatedPassButton.setEnabled(true);
                 }
             }
@@ -320,8 +324,8 @@ public class MyForm {
                 else {
                     enhancedPassTextPane.setText(new Enhancer(passToEnhanceTextField.getText()).enhancePass());
                     copyEnhancedPassButton.setEnabled(true);
-                    enhancedPassStrengthLabel.setText(new PassStrenghtAnalyzer(enhancedPassTextPane.getText()).passStrength());
-                    oldPassStrenghtLabel.setText(new PassStrenghtAnalyzer(passToEnhanceTextField.getText()).passStrength());
+                    enhancedPassStrengthLabel.setText(new PassStrengthAnalyzer(enhancedPassTextPane.getText()).passStrength());
+                    oldPassStrenghtLabel.setText(new PassStrengthAnalyzer(passToEnhanceTextField.getText()).passStrength());
                 }
             }
         });
@@ -338,6 +342,9 @@ public class MyForm {
 
     }
 
+    /**
+     * @return string of selected special chars
+     */
     String getSpecialChars() {
         String special = "";
 

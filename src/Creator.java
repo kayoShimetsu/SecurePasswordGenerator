@@ -2,6 +2,12 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Random;
 
+
+/**
+ * Class to create password based on entered strings
+ * @author IwonaD
+ */
+
 public class Creator {
     LinkedList<String> words;
 
@@ -15,6 +21,9 @@ public class Creator {
         words.add(w5);
     }
 
+    /**
+     * @return created password
+     */
     String createPass(){
         String pass = "";
 

@@ -4,12 +4,25 @@ import java.util.List;
 import java.util.Random;
 
 
+/**
+ * Class generating random passwords based on chosen length and charset
+ * @author IwonaD
+ */
+
 public class Generator {
     String library;
     int passLen;
 
-
-    Generator(int passLenght,
+    /**
+     * @param passLength length of password
+     * @param az use [a-z]
+     * @param aZ use [A-Z]
+     * @param num use [0-9]
+     * @param sPolChars use [ą, ć, ę, ł, ń, ó, ś, ź, ż]
+     * @param bPolChars use [Ą, Ć, Ę, Ł, Ń, Ó, Ś, Ź, Ż]
+     * @param specials use selected special chars
+     */
+    Generator(int passLength,
               boolean az,
               boolean aZ,
               boolean num,
@@ -17,7 +30,7 @@ public class Generator {
               boolean bPolChars,
               String specials) {
         library = "";
-        passLen = passLenght;
+        passLen = passLength;
 
         if(az) library += "abcdefghijklmnopqrstuvwxyz";
         if(aZ) library += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -27,6 +40,9 @@ public class Generator {
         library += specials;
     }
 
+    /**
+     * @return generated random password
+     */
     String generatePass() {
         String genPass = "";
         Random random = new Random();
@@ -40,6 +56,10 @@ public class Generator {
         return genPass;
     }
 
+    /**
+     * Enters characters from string to list and shuffles list
+     * @return shuffled list of charset
+     */
     List<Character> shuffleLibrary() {
         List<Character> shuffledLibrary = new LinkedList<>();
         for(char c : library.toCharArray()) {
