@@ -74,7 +74,7 @@ public class MyForm {
     private JLabel oldPassStrenghtLabel;
     private JButton enhancePassButton;
     private JTextPane enhancedPassTextPane;
-    private JTextPane ogólnieWyjaśnieniePoCoTextPane;
+    private JTextPane infoTextPane;
     private JButton copyCreatedPassButton;
     private JTextPane createdPassTextPane;
     private JButton copyEnhancedPassButton;
@@ -87,6 +87,7 @@ public class MyForm {
     private JLabel lastUpdateLabel;
     private JLabel authorLabel;
     private JLabel gitLinkLabel;
+    private JScrollPane howToUseScrollPane;
 
 
     public MyForm() {
@@ -344,6 +345,14 @@ public class MyForm {
             }
         });
 
+
+        //----------INFO PANE----------//
+        //set scroll on the top of scroll pane
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                howToUseScrollPane.getVerticalScrollBar().setValue(0);
+            }
+        });
     }
 
     /**
