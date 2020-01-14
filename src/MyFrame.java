@@ -15,7 +15,7 @@ public class MyFrame extends JFrame {
         setPreferredSize(new Dimension(550, 380));
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
-        setResizable(true);
+        setResizable(false);
 
         Dimension dimOfWindow = new Dimension(Toolkit.getDefaultToolkit().getScreenSize());
         setLocation((dimOfWindow.width - this.getSize().width)/2, (dimOfWindow.height - this.getSize().height)/2);

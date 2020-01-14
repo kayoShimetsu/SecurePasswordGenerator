@@ -83,6 +83,10 @@ public class MyForm {
     private JLabel createdPassStrengthLabel;
     private JLabel enhancedPassStrengthLabel;
     private JTextField passToEnhanceTextField;
+    private JLabel versionLabel;
+    private JLabel lastUpdateLabel;
+    private JLabel authorLabel;
+    private JLabel gitLinkLabel;
 
 
     public MyForm() {
