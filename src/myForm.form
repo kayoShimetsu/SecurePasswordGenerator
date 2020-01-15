@@ -16,7 +16,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <grid id="e0d9" layout-manager="BorderLayout" hgap="0" vgap="0">
+          <grid id="e0d9" binding="generatorTabbedPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
             <constraints>
               <tabbedpane title="Generator losowy"/>
             </constraints>
@@ -676,8 +676,11 @@
                     </constraints>
                     <properties>
                       <editable value="false"/>
-                      <minimumSize width="218" height="22"/>
-                      <text value="naciśnij generuj aby wygenerować hasło"/>
+                      <maximumSize width="400" height="22"/>
+                      <minimumSize width="300" height="22"/>
+                      <opaque value="false"/>
+                      <preferredSize width="300" height="22"/>
+                      <text value="Naciśnij GENERUJ aby wygenerować hasło."/>
                       <visible value="true"/>
                     </properties>
                   </component>
@@ -707,7 +710,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="6d331" layout-manager="GridBagLayout">
+          <grid id="6d331" binding="creatorTabbedPanel" layout-manager="GridBagLayout">
             <constraints>
               <tabbedpane title="Kreator"/>
             </constraints>
@@ -907,8 +910,9 @@
                       <editable value="false"/>
                       <maximumSize width="400" height="22"/>
                       <minimumSize width="300" height="22"/>
+                      <opaque value="false"/>
                       <preferredSize width="300" height="22"/>
-                      <text value="naciśnij kreuj aby wykreować hasło"/>
+                      <text value="Naciśnij KREUJ aby wykreować hasło."/>
                     </properties>
                   </component>
                   <hspacer id="125b6">
@@ -942,7 +946,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="c5092" layout-manager="GridBagLayout">
+          <grid id="c5092" binding="enhancerTabbedPanel" layout-manager="GridBagLayout">
             <constraints>
               <tabbedpane title="Wzmacniacz"/>
             </constraints>
@@ -1065,8 +1069,9 @@
                       <editable value="false"/>
                       <maximumSize width="400" height="22"/>
                       <minimumSize width="300" height="22"/>
+                      <opaque value="false"/>
                       <preferredSize width="300" height="22"/>
-                      <text value="naciśnij wzmocnij aby wzmocnić hasło"/>
+                      <text value="Naciśnij WZMOCNIJ aby wzmocnić hasło."/>
                     </properties>
                   </component>
                   <hspacer id="4becd">
@@ -1100,7 +1105,7 @@
               </grid>
             </children>
           </grid>
-          <grid id="8f349" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="8f349" binding="infoTabbedPanel" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <tabbedpane title="Info"/>
@@ -1130,7 +1135,8 @@
                     <constraints/>
                     <properties>
                       <editable value="false"/>
-                      <text value="Generator Bezpiecznych Haseł stworzony jest dla osób chcących zwiększyć bezpieczeństwo swoich danych chronionych hasłem.&#10;Możliwe jest skorzystanie z trzech wariantów generowania haseł.&#10;&#10;GENERATOR LOSOWY &#10;Hasła losowe dają największą odporność na wszelkiego rodzaju ataki słownikowe. Jedyną opcją złamania takiego hasła jest atak brutalny. By wygenerować hasło wystarczy wybrać na suwaku odpowiednią długość hasła oraz zestaw znaków, z którego będzie się korzystać. Warto konstruować hasło z wykorzystaniem całego akceptowalnego przez system zestawu znaków.&#10;&#10;KREATOR&#10;Kreator stworzony został z myślą o osobach, które mają problem z zapamiętywaniem haseł. Kreator tworzy hasło używając do tego składowych łatwozapamiętywalnych przez użytkownika. &#10;UWAGA! Kreator może zmienić kolejność występowania oraz &quot;wygląd&quot; słów składowych! Kreator dodaje również dodatkowe znaki.&#10;Zalecenia odnośnie rodzaju wpisywanych słów znajdują się w sekcji BEZPIECZEŃSTWO.&#10;&#10;WZMACNIACZ&#10;Zwiększa siłę używanego przez użytkownika hasła poprzez poszerzenie zestawu użytych znaków.&#10;UWAGA! Użytkownik powinien mieć na uwadze, że hasła wynikowe nie zawsze będą bardzo silne! Algorytm wzmacniania jest wciąż ulepszany.&#10;&#10;SIŁA HASŁA&#10;Siła hasła jest wyliczana na podstawie Entropii Shannona - należy pamiętać, że daje ona miarodajne wyniki jedynie w przypadku haseł losowych, przy hasłach opartych na wyrazach słownikowych wynik jest nieco zawyżony!&#10;&#10;KOPIOWANIE&#10;Przycisk kopiowania kopiuje wygenerowane hasło do schowka systemowego. &#10;UWAGA! Wyłączenie aplikacji równoważne jest z wyczyszczeniem zawartości schowka bez wzglęgu na to, co w nim się znajdowało!&#10;&#10;BEZPIECZEŃSTWO&#10;Hasło, nawet to o największej sile nigdy nie zagwarantuje 100% bezpieczeństwa. Ważne jest, aby również użytkownik przestrzegał podstawowych zasad:&#10;1. Nie będzie zdradzał hasła osobom trzecim.&#10;2. Nie będzie zapisywał hasła w postaci jawnej w łatwodostępnym, widocznym miejscu (dotyczy również plików zapisanych na komputerze).&#10;3. Nie będzie generował haseł krótkich, słownikowych, jednoznacznie określających samego siebie. Najmniejszą dostępną długością hasła jest 8 znaków, lecz zalecane jest stosowanie minimum 12 znaków z możliwie najszerszym dozwolonym zakresem znaków.&#10;4. Będzie regularnie zmieniał hasła.&#10;5. Będzie monitorował budowę najpopularniejszych haseł.&#10;6. Będzie posiadał unikalne hasła do każdych danych logowania.&#10;7. Nie będzie logował się przez publiczne sieci bądź na nieznanych, niezaufanych urządzeniach.&#10;&#10;AKTUALIZACJE&#10;Wszelkie informacje o dostępności aktualnego oprogramowania znajdą się w repozytorium: https://github.com/kayoShimetsu/SecurePasswordGenerator"/>
+                      <opaque value="false"/>
+                      <text value="Generator Bezpiecznych Haseł stworzony jest dla osób chcących zwiększyć bezpieczeństwo swoich danych chronionych hasłem.&#10;By zmniejszyć szansę na przechwycenie wygenerowanego hasła po zamknięciu programu, schowek systemowy jest czyszczony bez względu na jego zawartość. Zaleca się przed zamknięciem przenieść zawartość do pliku.&#10;Możliwe jest skorzystanie z trzech wariantów generowania haseł.&#10;&#10;GENERATOR LOSOWY &#10;Hasła losowe dają największą odporność na wszelkiego rodzaju ataki słownikowe. Jedyną opcją złamania takiego hasła jest atak brutalny. By wygenerować hasło wystarczy wybrać na suwaku odpowiednią długość hasła oraz zestaw znaków, z którego będzie się korzystać. Warto konstruować hasło z wykorzystaniem całego akceptowalnego przez system zestawu znaków.&#10;&#10;KREATOR&#10;Kreator stworzony został z myślą o osobach, które mają problem z zapamiętywaniem haseł. Kreator tworzy hasło używając do tego składowych łatwozapamiętywalnych przez użytkownika. &#10;UWAGA! Kreator może zmienić kolejność występowania oraz &quot;wygląd&quot; słów składowych! Kreator dodaje również dodatkowe znaki.&#10;Zalecenia odnośnie rodzaju wpisywanych słów znajdują się w sekcji BEZPIECZEŃSTWO.&#10;&#10;WZMACNIACZ&#10;Zwiększa siłę używanego przez użytkownika hasła poprzez poszerzenie zestawu użytych znaków.&#10;UWAGA! Użytkownik powinien mieć na uwadze, że hasła wynikowe nie zawsze będą bardzo silne! Algorytm wzmacniania jest wciąż ulepszany.&#10;&#10;SIŁA HASŁA&#10;Siła hasła jest wyliczana na podstawie Entropii Shannona - należy pamiętać, że daje ona miarodajne wyniki jedynie w przypadku haseł losowych, przy hasłach opartych na wyrazach słownikowych wynik jest nieco zawyżony!&#10;&#10;KOPIOWANIE&#10;Przycisk kopiowania kopiuje wygenerowane hasło do schowka systemowego. &#10;UWAGA! Wyłączenie aplikacji równoważne jest z wyczyszczeniem zawartości schowka bez wzglęgu na to, co w nim się znajdowało!&#10;&#10;BEZPIECZEŃSTWO&#10;Hasło, nawet to o największej sile nigdy nie zagwarantuje 100% bezpieczeństwa. Ważne jest, aby również użytkownik przestrzegał podstawowych zasad:&#10;1. Nie będzie zdradzał hasła osobom trzecim.&#10;2. Nie będzie zapisywał hasła w postaci jawnej w łatwodostępnym, widocznym miejscu (dotyczy również plików zapisanych na komputerze).&#10;3. Nie będzie generował haseł krótkich, słownikowych, jednoznacznie określających samego siebie. Najmniejszą dostępną długością hasła jest 8 znaków, lecz zalecane jest stosowanie minimum 12 znaków z możliwie najszerszym dozwolonym zakresem znaków.&#10;4. Będzie regularnie zmieniał hasła.&#10;5. Będzie monitorował budowę najpopularniejszych haseł.&#10;6. Będzie posiadał unikalne hasła do każdych danych logowania.&#10;7. Nie będzie logował się przez publiczne sieci bądź na nieznanych, niezaufanych urządzeniach.&#10;&#10;AKTUALIZACJE&#10;Wszelkie informacje o dostępności aktualnego oprogramowania znajdą się w repozytorium: https://github.com/kayoShimetsu/SecurePasswordGenerator"/>
                     </properties>
                     <clientProperties>
                       <JEditorPane.w3cLengthUnits class="java.lang.Boolean" value="false"/>
@@ -1178,6 +1184,16 @@
           </grid>
         </children>
       </tabbedpane>
+      <component id="dcf85" class="javax.swing.JLabel" binding="exitInfoJLabel">
+        <constraints border-constraint="North"/>
+        <properties>
+          <font style="1"/>
+          <foreground color="-4519420"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="UWAGA! Zamknięcie okna spowoduje wyczyszczenie zawartości schowka systemowego."/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

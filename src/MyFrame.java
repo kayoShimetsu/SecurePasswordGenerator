@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.datatransfer.StringSelection;
 
 
 /**
@@ -10,10 +11,10 @@ import java.awt.*;
 public class MyFrame extends JFrame {
     MyFrame() {
         super("Generator Bezpiecznych Haseł"); //Secure Password Generator
-        setSize(550, 380);
-        setMinimumSize(new Dimension(550, 380));
-        setPreferredSize(new Dimension(550, 380));
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setSize(550, 390);
+        setMinimumSize(new Dimension(550, 390));
+        setPreferredSize(new Dimension(550, 390));
+        setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         setVisible(true);
         setResizable(false);
 
@@ -23,6 +24,22 @@ public class MyFrame extends JFrame {
         initComponents();
 
         pack();
+
+        //creates option pane asking if user is sure to clean system clipboard and close application
+        this.addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
+                int value = JOptionPane.showConfirmDialog(null,
+                        "Zamykając program zgadzasz się na wyczyszczenie zawartości systemowego schowka." +
+                                "\nWybierz OK by zamknąć program", "Zamknąć okno?",
+                            JOptionPane.DEFAULT_OPTION,
+                            JOptionPane.QUESTION_MESSAGE);
+                if(value == 0) {
+                    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(""), null);
+                    System.exit(0);
+                }
+            }
+        });
     }
 
     /**
