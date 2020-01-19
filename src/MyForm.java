@@ -269,7 +269,8 @@ public class MyForm {
         copyGeneratedPassButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                StringSelection stringToClipboard = new StringSelection(generatedPassTextPane.getText());
+                StringSelection stringToClipboard =
+                        new StringSelection(generatedPassTextPane.getText());
                 Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
                 clipboard.setContents(stringToClipboard, null);
             }
@@ -320,8 +321,6 @@ public class MyForm {
         enhancePassButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO add info if there is no pass to enhance
-
                 if (passToEnhanceTextField.getText().equals("")) {
                     enhancedPassTextPane.setText("Wypełnij pole tekstowe.");
                     copyEnhancedPassButton.setEnabled(false);

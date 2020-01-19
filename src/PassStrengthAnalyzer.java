@@ -15,16 +15,21 @@ public class PassStrengthAnalyzer {
 
     /**
      * Analyzes strength based on Shannon entrophy
-     * @return Three possible strings "Siła hasła: słabe/średnie/silne"
+     * @return Five possible strings "Siła hasła: bardzo słabe/
+     *         słabe/średnie/dobre/silne"
      */
     String passStrength() {
         double passEntrophy;
 
         passEntrophy = pass.length() * (Math.log(passAlphabetLenghth()) / Math.log(2));
 
-        if(passEntrophy < 50) return "Siła hasła: słabe";
-        else if(passEntrophy > 50
-                && passEntrophy < 60) return "Siła hasła: średnie";
+        if(passEntrophy < 40) return "Siła hasła: bardzo słabe";
+        else if(passEntrophy > 40
+                && passEntrophy < 60) return "Siła hasła: słabe";
+        else if(passEntrophy > 60
+                && passEntrophy < 80) return "Siła hasła: średnie";
+        else if(passEntrophy > 80
+                && passEntrophy < 100) return "Siła hasła: dobre";
         else return "Siła hasła: silne";
     }
 

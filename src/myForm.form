@@ -274,7 +274,7 @@
                     <properties>
                       <requestFocusEnabled value="false"/>
                       <selected value="false"/>
-                      <text value="&amp;"/>
+                      <text value=""/>
                     </properties>
                   </component>
                   <component id="b5225" class="javax.swing.JCheckBox" binding="bPolishCharsCheckBox">
@@ -1160,7 +1160,7 @@
                 </constraints>
                 <properties>
                   <font size="11" style="1"/>
-                  <text value="last update: 14 Jan 2020 "/>
+                  <text value="last update: 19 Jan 2020 "/>
                 </properties>
               </component>
               <component id="bd322" class="javax.swing.JLabel" binding="authorLabel">

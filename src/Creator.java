@@ -30,8 +30,9 @@ public class Creator {
         Collections.shuffle(words);
 
         Random random = new Random();
-        String places = Integer.toBinaryString(random.nextInt(2^(words.size())));
+        String places = Integer.toBinaryString(random.nextInt(2^(words.size()+1)-1));
 
+        //adding missing positions at the beginning of string
         while(places.length() < words.size() + 1) places = '0' + places;
 
         for(int i = 0; i < words.size(); i++) {
@@ -39,6 +40,7 @@ public class Creator {
             pass += new Enhancer(words.get(i)).enhancePass();
         }
 
+        //adding number at the end
         if(places.charAt(words.size()) == '1') pass += random.nextInt(10);
 
         while(pass.length() < 8) {
